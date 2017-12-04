@@ -1,0 +1,14 @@
+a{
+	font-size: 17px;
+	margin: 13px;
+}
+a:hover{
+	color:gray;
+	text-decoration:none;
+}
+.bg_black{
+	background: black;
+}
+.font_white{
+	color: white;
+}
