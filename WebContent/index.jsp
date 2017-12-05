@@ -1,0 +1,154 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="corner/corner.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="corner/corner.css">
+	<title>云盘</title>
+</head>
+<body class="bg_black">
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+		   		 <div class="page-header">
+					<h1 style="text-align: left;" onclick="return bg_turn()">
+						Group project
+					</h1>
+					<div style="text-align: right;">
+						<a data-toggle="modal" data-target="#loginModal">
+							<img alt="登录" src="img/login_gray.svg">
+						</a>
+						<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   					    <div class="modal-dialog modal-sm">
+       						 <div class="modal-content">
+            					<div class="modal-header">
+                					<h3 class="modal-title" id="loginModalLabel">登录</h3>
+           						 </div>
+       							<form class="form-horizontal" role="form" action="Login" method="post">
+      								 <div class="modal-body">
+										<div class="form-group">
+											 <label   class="col-sm-3 control-label" for="email_login">邮箱：</label>
+											 <div class="col-sm-9">
+												<input class="form-control" name="m_login_email" id="email_login" type="email" />
+											 </div>
+										</div>
+										<div class="form-group">
+											 <label class="col-sm-3 control-label" for="password_login">密码：</label>
+											 <div class="col-sm-9">
+												<input class="form-control" name="m_login_password" id="password_login" type="password" />
+											 </div>
+										</div>
+										<div class="form-group">
+											 <div class="col-sm-offset-2 col-sm-10">
+											 	<div class="checkbox">
+							 						<label><input type="checkbox" />记住我</label>
+												</div>
+											</div>
+										</div>
+									</div>
+        							<div class="modal-footer">
+           							    <button type="submit"  class="btn btn-success" onclick="Login()">登录</button>
+       								</div>  
+        						</form>
+       						 </div>
+   					  </div>
+				</div>
+				<a data-toggle="modal" data-target="#registerModal"><img alt="注册" src="img/register_gray.svg"></a>
+				<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    				<div class="modal-dialog modal-sm">
+      					  <div class="modal-content">
+            					<div class="modal-header">
+               						 <h3 class="modal-title" id="registerModalLabel">注册</h3>
+            					</div>
+           					    <form class="form-horizontal" role="form" action="Register" method="post">
+       								<div class="modal-body">
+										<div class="form-group">
+											 <label class="col-sm-3 control-label" for="email_register">邮箱：</label>
+											 <div class="col-sm-9">
+												<input class="form-control" name="m_register_email" id="email_register" type="email" />
+										   	 </div>
+					 					</div>
+										<div class="form-group">
+					 						 <label class="col-sm-3 control-label" for="password_register">密码：</label>
+											 <div class="col-sm-9">
+						  						<input class="form-control" name="m_register_password" id="password_register" type="password" />
+											 </div>
+				  						</div>
+				 						<div class="form-group">
+											 <label class="col-sm-3 control-label" for="password_certain">确认：</label>
+											 <div class="col-sm-9">
+												 <input class="form-control" name="m_register_certain" id="password_certain" type="password" />
+											 </div>
+										</div>
+									</div>
+      							    <div class="modal-footer">
+          							   <button type="submit" class="btn btn-success">注册</button>
+       							    </div>  
+       						   </form>
+       					 </div>
+   					 </div>
+  					</div>
+				</div>
+			</div>
+
+				<div class="carousel slide" id="carousel-706372">				
+					<div class="carousel-inner">
+						<div class="item active">
+							<img alt="" src="img/1.jpg" />
+							<div class="carousel-caption">
+								<h4>
+									header
+								</h4>
+								<p>
+									content…
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="img/2.jpg" />
+							<div class="carousel-caption">
+								<h4>
+									header
+								</h4>
+								<p>
+								content…
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="img/3.jpg" />
+							<div class="carousel-caption">
+								<h4>
+									header
+								</h4>
+								<p>
+									content…
+								</p>
+							</div>
+						</div>
+					</div> 
+					<a class="left carousel-control" href="#carousel-706372" data-slide="prev"></a> 
+					<a class="right carousel-control" href="#carousel-706372" data-slide="next"></a>
+				</div>
+				<h2>
+					ponder in dark
+				</h2>
+				<p>
+					Man's dearest possession is life,and it is given to him to live but once.He must live so as to feel no torturing 
+					regrets for years without purpose,never know the burning shame of a mean and petty past--so live that,dying,
+					he can say:all my life,all my strength were given to the finest cause in all over the world--the fight for the
+					 liberation of mankind.
+				</p>
+				<p>
+					 <a class="btn font_white" href="#">View details »</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
