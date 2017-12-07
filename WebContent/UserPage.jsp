@@ -11,23 +11,132 @@
 	<!-- <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script> -->
 	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
 </head>
-<body>
-	<div class="container">
-		<div class="jumbotron">
-			<div class="row">
-				<h2 class="text-primary text-center">用户云盘</h2>
-			</div>		
-		</div>
-	</div>
+	<body style="background-repeat: no-repeat;background-attachment: fixed;" background="img/671293.jpg">
 		
-	<div class="container">
+		<!--header-->
+		<div class="container">
 			
-	</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1">
+						<img style="margin-top: 45px;" src="img/icon_header.svg" class="img-circle"/>
+					</div>
+					<div class="col-md-6">
+						<div class="jumbotron" style="background-color: transparent;">
+							<h2>欢迎来到开心社区</h2>
+							<div class="btn-group">
+								<!--此处代改动-->
+   								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      								原始 <span class="caret"></span>
+   								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<!--content-->
+		<div class="container" style="margin-top: 30px;">
+			<h3 class="text-center">推荐视频</h3>
+			<hr/>
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="list-group">
+						<li class="list-group-item active text-center">列表</li>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							haha
+							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+						</div>
+						<div class="list-group-item text-center">
+							
+							<img style="height: 20px;width: 20px;visibility: hidden;" src="img/download.svg" class="text-md-right" />
+						</div>
+					</ul>
+				</div>
+				<video controls="controls" class="col-md-8">
+					<source src="video/test1.mp4" type="audio/mp4"></source>
+				</video>
+			</div>
+		</div>
+			
+		<div id="talkinlogin" class="row" style="margin-top: 30px;">
+			<h3 class="text-center">博客分享</h3>
+				<hr />
+			<div class="row" style="margin-left: 100px;margin-right: 100px;">
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+			</div>	
+		</div>
+
+
+		<div id="talkinlogin" class="row" style="margin-top: 30px;">
+			<h3 class="text-center">天天音乐</h3>
+				<hr />
+			<div class="row" style="margin-left: 100px;margin-right: 100px;">
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/gainie.png" style="height: 100px;width: 100px;display: inline;"/>
+					<p>测试文本</p>
+				</div>
+			</div>	
+		</div>
+		
+		<footer class="panel-footer text-center">
+			页脚
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		
 		
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-</body>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
 </html>

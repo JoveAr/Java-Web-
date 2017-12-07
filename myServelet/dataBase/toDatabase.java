@@ -31,6 +31,7 @@ public class toDatabase {
 			con = DriverManager.getConnection(url);
 			statement = con.createStatement();
 			toDatabase.ConnectionMessage = "Success";
+			System.out.println("已链接上数据库！");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
