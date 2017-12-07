@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dataBase.toDatabase;
+
 /**
  * Servlet implementation class Login
  */
@@ -44,6 +46,10 @@ public class Login extends HttpServlet {
 		
 		//跳转
 		toAnotherPage(request,response);
+		
+		//测试数据库的链接
+		toDatabase.ConnectToDatabase();
+		toDatabase.Close();
 		
 	}
 
