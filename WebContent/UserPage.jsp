@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 	<!-- <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script> -->
 	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="js/UserpageJS.js" ></script>
 </head>
 	<body style="background-repeat: no-repeat;background-attachment: fixed;" background="img/671293.jpg">
 		
@@ -46,7 +47,7 @@
 						<li class="list-group-item active text-center">列表</li>
 						<div class="list-group-item text-center">
 							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							<img id="img_down" style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 						</div>
 						<div class="list-group-item text-center">
 							haha
@@ -83,7 +84,7 @@
 					</ul>
 				</div>
 				<video controls="controls" class="col-md-8">
-					<source src="video/test1.mp4" type="audio/mp4"></source>
+					<source src="http://localhost/Armon/test1.mp4" type="audio/mp4"></source>
 				</video>
 			</div>
 		</div>
