@@ -1,6 +1,5 @@
 package Servelet;
 
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,20 +8,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Uploads
+ * Servlet implementation class Collect
  */
-@WebServlet("/Uploads")
-public class Uploads extends HttpServlet {
+@WebServlet("/Collect")
+public class Collect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	private String file_name = "";
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Uploads() {
+    public Collect() {
         super();
-        
-        //test
-        
         // TODO Auto-generated constructor stub
     }
 
@@ -40,7 +37,11 @@ public class Uploads extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		Thread th = new Thread();
+	}
+	
+	public void collect()
+	{
+		//执行数据库更新操作
 	}
 
 }
