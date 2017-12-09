@@ -1,63 +1,34 @@
 package Servelet;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.jspsmart.upload.SmartUpload;
-import com.jspsmart.upload.SmartUploadException;
-
 /**
- * Servlet implementation class DownloadServelet
+ * Servlet implementation class Collect
  */
-@WebServlet("/DownloadServelet")
-public class Download extends HttpServlet {
+@WebServlet("/Collect")
+public class Collect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	private ServletConfig config = null;
-	ArrayList[] files = null;
-	
        
+	private String file_name = "";
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Download() {
+    public Collect() {
         super();
-        List<File> fli =  new  ArrayList<File>();
         // TODO Auto-generated constructor stub
     }
-
-	/**
-	 * @see Servlet#init(ServletConfig)
-	 */
-	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
-		this.config = config;
-	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-			SmartUpload su = new SmartUpload();
-			su.initialize(config, request, response);
-			su.setContentDisposition(null);
-			try {
-				su.downloadFile("/video/test1.mp4");
-			}
-			catch(SmartUploadException e)
-			{
-				e.printStackTrace();
-			}
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -66,6 +37,11 @@ public class Download extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+	
+	public void collect()
+	{
+		//执行数据库更新操作
 	}
 
 }

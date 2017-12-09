@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 	<!-- <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script> -->
 	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
-	<script type="text/javascript" src="js/UserpageJS.js" ></script>
+	<script type="text/javascript" src="js/UserPage.js" ></script>
 </head>
 	<body style="background-repeat: no-repeat;background-attachment: fixed;" background="img/671293.jpg">
 		
@@ -46,45 +46,85 @@
 					<ul class="list-group">
 						<li class="list-group-item active text-center">列表</li>
 						<div class="list-group-item text-center">
-							haha
-							<img id="img_down" style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="DownloadServelet">
+								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
 						<div class="list-group-item text-center">
-							haha
-							<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							秦时明月剪辑
+							<a href="Collect">
+								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
+							</a>
+							<a href="DownloadServelet">
+								<img style="height: 20px;width: 20px;" src="img/uncollect.svg" class="text-md-right" />
+							</a>
 						</div>
-						<div class="list-group-item text-center">
-							
-							<img style="height: 20px;width: 20px;visibility: hidden;" src="img/download.svg" class="text-md-right" />
+						<div id="img_more" class="list-group-item text-center">
+							更多视频
+							<img style="height: 20px;width: 20px;" src="img/more.svg" class="text-md-right" />
 						</div>
 					</ul>
 				</div>
 				<video controls="controls" class="col-md-8">
-					<source src="http://localhost/Armon/test1.mp4" type="audio/mp4"></source>
+					<source src="video/test1.mp4" type="audio/mp4"></source>
 				</video>
 			</div>
 		</div>
