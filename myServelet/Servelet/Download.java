@@ -24,6 +24,7 @@ public class Download extends HttpServlet {
 
 	private ServletConfig config = null;
 	ArrayList[] files = null;
+	private String msg = "1.txt";
 	
        
     /**
@@ -48,16 +49,7 @@ public class Download extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-			SmartUpload su = new SmartUpload();
-			su.initialize(config, request, response);
-			su.setContentDisposition(null);
-			try {
-				su.downloadFile("/video/test1.mp4");
-			}
-			catch(SmartUploadException e)
-			{
-				e.printStackTrace();
-			}
+		download(request,response);		
 	}
 
 	/**
@@ -65,7 +57,23 @@ public class Download extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		msg = request.getParameter("msg");
 		doGet(request, response);
+	}
+
+	public void download(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		System.out.println("" + request.getRequestURL());
+		SmartUpload su = new SmartUpload();
+		su.initialize(config, request, response);
+		su.setContentDisposition(null);
+		try {
+			su.downloadFile("/video/" + msg);
+		}
+		catch(SmartUploadException e)
+		{
+			e.printStackTrace();
+		}
 	}
 
 }

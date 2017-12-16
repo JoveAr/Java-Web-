@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>页面出错啦+*——*+</p>
+<p>用户名不存在</p>
 </body>
 </html>

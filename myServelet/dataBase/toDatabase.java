@@ -24,7 +24,7 @@ public class toDatabase {
 		}
 	
 		//Êý¾Ý¿âµÄurl
-		String url = "jdbc:mysql://localhost:3306/myusersystem?user=root&password=Ilovelm417520";
+		String url = "jdbc:mysql://localhost:3306/finalproject?user=root&password=Ilovelm417520";
 		//String url = "jdbc:mysql://120.79.21.64:3306/myusersystem?user=Armon&password=Ilovelm417520";
 		//String url = "jdbc:mysql://localhost:3306/myusersystem?user=Armon&password=Ilovelm417520";
 		try {

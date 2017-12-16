@@ -1,11 +1,20 @@
 package Servelet;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import dataBase.toDatabase;
 
 /**
  * Servlet implementation class Register
@@ -18,6 +27,12 @@ public class Register extends HttpServlet {
 	private String password = "";
 	private String password_certain  = "";
        
+	private String sql = "";
+	private Statement sta = null;
+	private Connection con = null;
+	
+	private String result = "-1";
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -35,7 +50,24 @@ public class Register extends HttpServlet {
 		password = request.getParameter("m_register_password");
 		password_certain = request.getParameter("m_register_certain");
 		
-		checkUser(response);
+		try {
+			addUser(response);
+			if(this.result.equals("1"))
+			{
+				String page = "registerSuccess.jsp";
+				//跳转
+				toAnotherPage(request,response,page);
+			}
+			else if(this.result.equals("0"))
+			{
+				String page = "registerFail.jsp";
+				//跳转
+				toAnotherPage(request,response,page);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -47,10 +79,33 @@ public class Register extends HttpServlet {
 	}
 
 	//链接数据库，验证
-	public void checkUser( HttpServletResponse response)
+	public void addUser( HttpServletResponse response) throws SQLException
 	{
-		System.out.println("获取的邮箱" + email);
-		System.out.println("获取的密码（1）" + password);
-		System.out.println("获取的密码（2）" + password_certain);
+		//测试数据库的链接
+		toDatabase.ConnectToDatabase();
+		sta = toDatabase.statement;
+		con = toDatabase.con;
+				
+				
+		sql = "insert into User(UserName,UserPassword) values(?,?)";
+		PreparedStatement ps = con.prepareStatement(sql);
+		ps.setString(1, email);
+		ps.setString(2, password);
+		int re = ps.executeUpdate();
+		if(re > 0)
+		{
+			this.result = "1";
+		}
+		else
+		{
+			this.result = "0";
+		}
+		toDatabase.Close();
+	}
+	
+	public void toAnotherPage(HttpServletRequest request,HttpServletResponse response,String page)throws IOException, ServletException
+	{
+		RequestDispatcher rd = request.getRequestDispatcher(page);
+		rd.forward(request, response);
 	}
 }

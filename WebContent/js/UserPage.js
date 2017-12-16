@@ -2,10 +2,11 @@
  * 2017.12.9 Armon Good Job
  */
 window.onload = function(){
-	
+	alert("da");
 	var img_more = document.getElementById("img_more");
 	
 	img_more.onclick = forwardAnotherPage;
+	
 }
 
 function forwardAnotherPage(){
@@ -23,7 +24,14 @@ function forwardAnotherPage(){
 //		);
 }
 
-function playVideo()
+function playVideo(i)
 {
-	alert("test");
+	alert("tt" + i);
+	//var video = document.getElementById("video");
+	//video.setAttribute("src","video/test2.mp4");
+	//video.setAttribute("autoplay","true");
+//	var sources = video.getElementsByTagName("source");
+//	sources[0] = "video/test2.mp4";
+//	video.load();
+	//alert("test" + sources);
 }

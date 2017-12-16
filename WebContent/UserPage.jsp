@@ -46,7 +46,7 @@
 					<ul class="list-group">
 						<li class="list-group-item active text-center">列表</li>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video" value="test1">test1</a>
 							<a href="DownloadServelet">
 								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -55,7 +55,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video2">lol</a>
 							<a href="DownloadServelet">
 								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -64,7 +64,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video3">xianjian</a>
 							<a href="DownloadServelet">
 								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -73,7 +73,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video4">秦时明月剪辑</a>
 							<a href="DownloadServelet">
 								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -82,7 +82,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video5">秦时明月剪辑</a>
 							<a href="DownloadServelet">
 								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -91,7 +91,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video6">秦时明月剪辑</a>
 							<a href="DownloadServelet">
 								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -100,7 +100,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_vide7o">秦时明月剪辑</a>
 							<a href="DownloadServelet">
 								<img  style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -109,7 +109,7 @@
 							</a>
 						</div>
 						<div class="list-group-item text-center">
-							秦时明月剪辑
+							<a id="play_video8">秦时明月剪辑</a>
 							<a href="Collect">
 								<img style="height: 20px;width: 20px;" src="img/download.svg" class="text-md-right" />
 							</a>
@@ -123,8 +123,8 @@
 						</div>
 					</ul>
 				</div>
-				<video controls="controls" class="col-md-8">
-					<source src="video/test1.mp4" type="audio/mp4"></source>
+				<video  id="video" controls="controls" class="col-md-8">
+					<source  src="video/test1.mp4" type="audio/mp4"></source>
 				</video>
 			</div>
 		</div>
